@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '380px'
+        'sm': '200px'
       },
       spacing:{
         "big":"48rem"
