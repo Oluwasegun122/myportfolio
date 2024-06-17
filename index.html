@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Tailwind Project</title>
+  <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/output.css"> <!-- Include the generated CSS -->
   <link rel="stylesheet" href="../src/styles/custom.css">
 </head>
 <body class="font-nunito">
   <!-- intro section -->
-  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+  <div class="h-sizh lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
     <!-- navbar -->
     <nav class="w-full fixed items-center top-0 bg-white z-10">
       <div class="container mx-auto py-5 flex justify-between">
@@ -33,7 +33,7 @@
           </li>
         </ul>
         <a class="hidden md:block underline text-gray-600 font-bold" href="https://www.linkedin.com/in/oluwasegun-oyebamiji-3b672a29a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Linkdin</a>
-        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+        <div id="hamburger" class="space-y-1 mt-3 md:hidden cursor-pointer h-0 z-20">
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
@@ -56,14 +56,20 @@
     </nav>
     <!-- lntro content -->
     <!-- image -->
-     <img class="absolute bottom-0 right-0 lg: left-0 mx-auto object-cover h-5/6" src="image/ad2.png" alt="">
+     <img class="absolute bottom-0 sm:-right-8 sm:h-3/4 lg:left-0 lg:mx-auto object-cover h-5/6" src="image/ad2.png" alt="">
     <!-- circle -->
-    <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
-    <!-- animated text -->
-     <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:-left-1/4 md:text-6xl lg:left-5 xl:left-7 xl:text-1/6xl font-bold">
-      <span class="text-gray-600">I'm Oluwasegun</span>
-      <p id="t" class="text-red-500"></p>
+    <div class="lg:block md:hidden sm:hidden absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+    <!-- animated text for sm -->
+    <div class="lg:hidden md:hidden absolute top-1/3  sm:left-0 text-xl sm:text-3xl md:-left-1/4 md:text-6xl lg:left-5 xl:left-7 xl:text-1/6xl font-bold">
+      <span class="text-gray-600">Frelancer</span>
+      <p id="smautotyping" class="text-red-500"></p>
      </div>
+    <!-- animated text -->
+     <div class="sm:hidden lg:block md:block absolute top-1/3 text-xl md:left-1 md:text-6xl lg:left-5 xl:left-7 xl:text-1/6xl font-bold">
+      <span class="text-gray-600">Frelancer</span>
+      <p class="autotyping text-red-500"></p>
+     </div>
+     
     <!-- text -->
     <div class="hidden lg:flex flex-col gap-5 rounded-xl shadow-xl absolute top-0 bottom-24 m-auto right-10 bg-white p-6 h-fit w-1/3">
       <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Oluwasegun</h1>
@@ -87,7 +93,7 @@
       </div>
       <!-- left -->
       <div class="my-auto flex flex-col gap-3 ">
-        <h1 class="text-indigo-600 font-bold">About Me</h1>
+        <h1 class="text-indigo-600 text-3xl font-bold uppercase">About Me</h1>
         <h1 class="text-3xl font-medium">Better Design</h1>
         <h1 class="text-3xl font-medium">Better Experience</h1>
         <p class="text-gray-400">
@@ -260,5 +266,6 @@
 </div>
   <script src="./public/index.js"></script>
   <script src="./public/autotyping.js"></script>
+  <script src="./public/autotyping_two.js"></script>
 </body>
 </html>

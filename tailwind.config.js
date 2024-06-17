@@ -3,19 +3,21 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '200px'
+        'sm': '340px'
       },
       spacing:{
         "big":"48rem"
       },
       fontFamily: {
-        nunito: ['Nunito', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif']
       },
       height: {  // Use `height` for custom height values
-        "siz": "500px"
+        "siz": "500px",
+        "sizh":"390px"
       },
       width: {  // Optionally, use `width` for custom width values if needed
-        "sizw": "600px"
+        "sizw": "600px",
+        "md_nav_w":"800px"
       },
     },
   },
